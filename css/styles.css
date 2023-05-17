@@ -1,0 +1,307 @@
+@font-face {
+  font-family: logo-font;
+  src: url("../fonts/Billabong.ttf");
+}
+
+:root{
+  color-scheme: dark;
+}
+
+html 
+{
+  scroll-behavior: smooth;
+}
+
+body, h1, .nav-link, .fea-head, .pri-head, .cta-head /*Montserrat Font selectors */
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+#features, #testimonials, #press, #explore, #cta, #footer, #footredir  /*Center text align selectors*/
+{
+  text-align: center;
+}
+
+.pro-con{
+  text-align: justify;
+}
+
+#features, #footredir
+{
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+body {
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+h2 {
+  font-family: 'Bona Nova', serif;
+  font-size: 2.5rem;
+}
+
+.pro-img
+{
+  width : 40%;
+}
+
+.pro-head
+{
+  color : #fff;
+}
+
+/* title-section*/
+
+#title {
+  background-color: #5C469C;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+/*download buttons*/
+
+.dicon {
+  float: left;
+  margin: 4px 5px auto auto;
+}
+
+.d-btn {
+  margin: 0.75rem 0.25rem;
+}
+
+/* Navigation Bar*/
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-size: 3.7rem;
+  font-weight: 700;
+  font-family: logo-font;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.top-con {
+  margin-left: 0;
+}
+
+.ph-img {
+  width: 95%;
+  position: relative;
+  z-index: 1;
+  left: 4rem;
+}
+
+.head-note /*Used in downredir.html*/ 
+{
+   color : #fff;
+   padding : 3rem 0;
+   font-size: large;
+}
+
+/* features-section */
+
+#features {
+  padding: 3% 2%;
+  color: #808080;
+}
+
+.fea-img {
+  width: 32%;
+  height: 39%;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.fea-img:hover {
+  opacity: 1.0;
+}
+
+.fea-head {
+  margin: 1.5rem auto 1rem auto;
+  font-weight: 700;
+  color: #000;
+  font-size: 1.7rem;
+}
+
+.fea-col {
+  margin: 1.5rem 0;
+}
+
+/*Explore Section*/
+
+#explore {
+  background-color: #5C469C;
+  padding: 6.25rem;
+  color : white;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#ex-head{
+  font-size: 3rem;
+}
+
+.card {
+  margin: 2rem 2.1rem;
+  padding: 0;
+  color : black;
+}
+
+.card-body > a:hover {
+  text-decoration: none;
+}
+
+.cr-font{
+  font-family: logo-font;
+  font-size: 3rem;
+}
+
+.pri-head {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.grey-txt {
+  color: #f0e6e6;
+}
+
+/* Call to action section */
+
+#cta
+{
+  background-color: #E5BEEC;
+  padding : 3rem 0;
+}
+
+.cta-head
+{
+  font-weight: 700;
+  color : #2A2F4F;
+  padding : 0.5rem 0 1.5rem;
+  font-size : 1.8rem;
+}
+
+/* Footer Section */
+
+.social-ico
+{
+  width : 2.5%;
+  height : 2.5%;
+  margin : 0.5rem 0.6rem 0 0.6rem;
+  filter : opacity(0.7);
+  filter : grayscale(1);
+}
+
+.social-ico:hover 
+{
+  filter : opacity(1);
+  filter : grayscale(0);
+}
+
+.cprt
+{
+  font-size: 1rem;
+  color : #808080;
+}
+
+#footredir
+{
+  padding-bottom: 2%;
+}
+
+/* Configuration for different screens */
+@media (min-width : 992px) and (max-width : 1147px) {
+  .ph-img {
+    position: static;
+    transform: rotate(0);
+    width: 110%;
+  }
+}
+
+@media (max-width : 991px) {
+  #title {
+    text-align: center;
+  }
+  
+  #title .nav-link
+  {
+    text-align: left;
+  }
+}
+
+@media (max-width : 570px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3
+  {
+    font-size : 1rem;
+  }
+  .fea-head {
+    font-size: 1.4rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .card {
+    margin: 2rem 0;
+  }
+
+  .grey-txt
+  {
+    font-size : 0.8rem;
+  }
+
+  .press-logo
+  {
+    width : 17%;
+    margin: 1rem 1.5rem;
+  }
+  em 
+  {
+    font-size: 0.7rem;
+  }
+  .cprt
+  {
+    font-size: 0.5rem;
+  }
+  .cta-head
+  {
+    font-size : 1.4rem;
+  }
+}
+
+
+
